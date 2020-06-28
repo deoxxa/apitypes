@@ -23,21 +23,24 @@ type Model struct {
 }
 
 type Field struct {
-	GoName      string
-	GoType      string
-	IsNull      bool
-	Array       bool
-	APIName     string
-	JSType      string
-	JSONType    map[string]interface{}
-	Filters     []Filter
-	Masked      bool
-	IgnoreInput bool
-	Facet       bool
-	NoOrder     bool
-	OmitEmpty   bool
-	Enum        Enums
-	Sequence    string
+	GoName         string
+	GoType         string
+	IsNull         bool
+	Array          bool
+	APIName        string
+	JSType         string
+	JSONType       map[string]interface{}
+	Filters        []Filter
+	Masked         bool
+	UserMask       string
+	UserMaskValue  string
+	IgnoreInput    bool
+	Facet          bool
+	NoOrder        bool
+	OmitEmpty      bool
+	Enum           Enums
+	Sequence       string
+	SequencePrefix string
 }
 
 type Enum struct {
